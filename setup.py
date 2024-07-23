@@ -12,7 +12,7 @@ setup(
     description="Library for calculating the area of geometric shapes",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ваш_профиль/geometry_calculator",
+    url="https://github.com/seregatipich/area_calculator",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
