@@ -7,7 +7,7 @@
 Install the library using pip:
 
 ```bash
-pip install geometry_calculator
+pip install git+https://github.com/seregatipich/area_calculator.git
 ```
 
 ## Usage

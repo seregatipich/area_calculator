@@ -5,12 +5,12 @@ from area_calculator.shapes.triangle import Triangle
 
 class TestAreaOfTriangle(TestCase):
     def test_area(self):
-        self.assertAlmostEqual(Triangle(3, 4, 5), 6.0)
-        self.assertAlmostEqual(Triangle(10, 10, 10), 43.30127)
+        self.assertAlmostEqual(Triangle(3, 4, 5).area(), 6.0, places=6)
+        self.assertAlmostEqual(Triangle(10, 10, 10).area(), 43.30127, places=5)
     
     def test_invalid_sides(self):
         with self.assertRaises(ValueError):
-            (1, 2, 10)
+            Triangle(1, 2, 10)
 
     def test_negative_sides(self):
         with self.assertRaises(ValueError):
