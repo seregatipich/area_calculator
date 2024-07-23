@@ -40,9 +40,9 @@ print(triangle.area())  # Output: 6.0
 
 ### Adding New Shapes
 
-To add a new shape, create a new class that inherits from Shape and implement area method and update '__init__' files.
+To add a new shape, create a new class that inherits from Shape and implement area method and update ```__init__``` files.
 
-Example: 'area_calculator/shapes/square.py'
+Example: ```area_calculator/shapes/square.py```
 ```Python
 from geometry_calculator.shapes.shape import Shape
 
@@ -56,7 +56,7 @@ class Square(Shape):
         return self.side ** 2
 ```
 
-Example: 'area_calculator/shapes/__init__.py'
+Example: ```area_calculator/shapes/__init__.py```
 ```Python
 from .circle import Circle
 from .triangle import Triangle
@@ -66,7 +66,7 @@ from .square import Square
 __all__ = ["Circle", "Triangle", "Square"]
 ```
 
-Example: 'area_calculator/__init__.py'
+Example: ```area_calculator/__init__.py```
 ```Python
 from .shapes.circle import Circle
 from .shapes.triangle import Triangle
