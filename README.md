@@ -2,6 +2,15 @@
 
 `area_calculator` is a Python library for calculating the area of various geometric shapes. This library is created as the first task from a test assignment for the Python trainee vacancy at Mindbox. 
 
+## Assignment
+
+Write a library in Python for external clients that can calculate the area of a circle given its radius and the area of a triangle given its three sides. In addition to maintainability, we will evaluate:
+1. Unit tests
+2. Ease of adding other figures
+3. Calculation of the area of a figure without knowing its type at compile-time
+4. Checking if a triangle is a right triangle
+
+
 ## Installation
 
 Install the library using pip:
