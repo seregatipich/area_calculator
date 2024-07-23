@@ -1,10 +1,10 @@
-import unittest
+from unittest import TestCase, main
 
-from area_calculator.shape_factory import create_shape
 from area_calculator.area_calculator import calculate_area
+from area_calculator.shape_factory import create_shape
 
 
-class TestAreaCalculator(unittest.TestCase):
+class TestAreaCalculator(TestCase):
     def test_calculate_circle_area(self):
         circle = create_shape("circle", 5)
         self.assertAlmostEqual(calculate_area(circle), 78.53981633974483, places=6)
@@ -15,4 +15,4 @@ class TestAreaCalculator(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    main()

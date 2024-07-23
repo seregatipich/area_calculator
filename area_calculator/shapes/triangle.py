@@ -1,4 +1,4 @@
-from math import sqrt
+from math import isclose, sqrt
 
 from .shape import Shape
 
@@ -22,3 +22,7 @@ class Triangle(Shape):
         s = (self.a + self.b + self.c) / 2  # semi-perimeter
         area = sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))  # Herone's formula
         return area
+
+    def is_right_angle(self):
+        sides = sorted([self.a, self.b, self.c])
+        return isclose(sides[0] ** 2 + sides[1] ** 2, sides[2] ** 2)
