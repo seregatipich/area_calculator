@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="geometry_calculator",
-    version="0.1",
+    version="0.2",
     author="Sergei Poluektov",
     author_email="seregatipich@outlook.com",
     description="Library for calculating the area of geometric shapes",
@@ -19,5 +19,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires=">=3.6",
 )
