@@ -26,7 +26,7 @@ pip install git+https://github.com/seregatipich/area_calculator.git
 Calculate area of a circle based on a given radius:
 
 ```Python
-from geometry_calculator import Circle
+from area_calculator import Circle
 
 # Create a Circle object with radius 5
 circle = Circle(5)
@@ -39,7 +39,7 @@ print(circle.area())  # Output: 78.53981633974483
 Calculate area of a triangle based on the given sides:
 
 ```Python
-from geometry_calculator import Triangle
+from area_calculator import Triangle
 
 # Create a Triangle object with sides 3, 4, 5
 triangle = Triangle(3, 4, 5)
@@ -53,7 +53,7 @@ To add a new shape, create a new class that inherits from Shape and implement ar
 
 Example: ```area_calculator/shapes/square.py```
 ```Python
-from geometry_calculator.shapes.shape import Shape
+from area_calculator.shapes.shape import Shape
 
 class Square(Shape):
     def __init__(self, side):

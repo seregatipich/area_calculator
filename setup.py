@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="geometry_calculator",
+    name="area_calculator",
     version="0.2",
     author="Sergei Poluektov",
     author_email="seregatipich@outlook.com",
