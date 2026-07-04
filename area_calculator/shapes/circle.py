@@ -1,8 +1,11 @@
 from math import pi
 
+from area_calculator.registry import register
+
 from .shape import Shape
 
 
+@register("circle")
 class Circle(Shape):
     """
     Circle shape class.

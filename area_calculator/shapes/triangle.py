@@ -1,8 +1,11 @@
 from math import isclose, sqrt
 
+from area_calculator.registry import register
+
 from .shape import Shape
 
 
+@register("triangle")
 class Triangle(Shape):
     """
     Triangle shape class.
