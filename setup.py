@@ -13,18 +13,6 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/seregatipich/area_calculator",
     packages=find_packages(),
-    install_requires=[
-        "numpy",
-        "scipy",
-        "sympy",
-    ],
-    extras_require={
-        "dev": ["pytest", "hypothesis", "ruff", "isort"],
-    },
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
+    install_requires=["numpy", "scipy", "sympy"],
     python_requires=">=3.10",
 )
