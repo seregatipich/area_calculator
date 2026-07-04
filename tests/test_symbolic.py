@@ -57,9 +57,7 @@ class TestSymbolicIntegration(TestCase):
         x = sympy.Symbol("x")
         exact = symbolic_area_under_curve(sympy.exp(x), x, 0, 1)
         self.assertTrue(
-            symbolic_matches_numeric(
-                exact, area_under_curve(math.exp, 0, 1)
-            )
+            symbolic_matches_numeric(exact, area_under_curve(math.exp, 0, 1))
         )
 
     def test_no_closed_form_raises(self):

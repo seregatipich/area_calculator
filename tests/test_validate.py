@@ -1,9 +1,6 @@
 from unittest import TestCase, main
 
-from area_calculator.precision.validate import (
-    validate_radius,
-    validate_triangle_sides,
-)
+from area_calculator.precision.validate import validate_radius, validate_triangle_sides
 from area_calculator.shapes.circle import Circle
 from area_calculator.shapes.triangle import Triangle
 
