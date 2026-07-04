@@ -1,24 +1,17 @@
-from area_calculator.shapes.shape import Shape
+from __future__ import annotations
+
+from .shapes.shape import Number, Shape, Shape2D, Solid, SupportsArea
 
 
-def calculate_area(shape: Shape) -> float:
+def calculate_area(shape: SupportsArea) -> Number:
     return shape.area()
 
-"""
-Можно использовать эту функцию не зная тип фигуры в compile-time:
 
-from area_calculator.shape_factory import create_shape
-from area_calculator.area_calculator import calculate_area
-
-# Create a Circle and a Triangle dynamically
-circle = create_shape("circle", 5)
-triangle = create_shape("triangle", 3, 4, 5)
-
-# Calculate areas dynamically
-circle_area = calculate_area(circle)
-triangle_area = calculate_area(triangle)
-
-print(f"Circle area: {circle_area}")  # Output: Circle area: 78.53981633974483
-print(f"Triangle area: {triangle_area}")  # Output: Triangle area: 6.0
-
-"""
+def measure(shape: Shape) -> dict[str, Number]:
+    measurements: dict[str, Number] = {"area": shape.area()}
+    if isinstance(shape, Solid):
+        measurements["surface_area"] = shape.surface_area()
+        measurements["volume"] = shape.volume()
+    elif isinstance(shape, Shape2D):
+        measurements["perimeter"] = shape.perimeter()
+    return measurements
